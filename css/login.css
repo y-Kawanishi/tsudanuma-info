@@ -1,0 +1,36 @@
+#wrapper {
+    margin-top: 120px;
+}
+
+.carousel {
+    text-align: center;
+}
+
+.section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#entry {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.btn {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#PasswordHelp {
+    opacity: 0.8;
+}
+
+.a {
+    color: blue;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    text-align: center;
+}

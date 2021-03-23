@@ -1,0 +1,352 @@
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+#wrapper {
+    margin-top: 120px;
+}
+
+.carousel {
+    text-align: center;
+}
+
+#footer-wrapper {
+    margin-top: 100px;
+}
+
+#box1, #box2 {
+    clear: both;
+}
+
+#box1 a, #box2 a {
+    color: black;
+}
+
+.box3{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color:black;
+    background: skyblue ;
+    border-bottom: solid 6px grey;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.box3 p{
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-weight: 900;
+}
+
+.nav-link {
+    font-size: large;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.circle{
+    /* margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 350px; */
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: skyblue;
+    line-height: 100px;
+    /* display: table; */
+    /* clear: both; */
+    font-family: 'Kosugi Maru', sans-serif;
+}
+#elem1, #elem2,  #elem3,  #elem4,  #elem5,  #elem6,  #elem7 {
+    margin: 3%;
+}
+.card1 {
+    float: left;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.card2, .card3 {
+    float: left;
+    margin-left: 133px;
+    margin-right: 133px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.pic{
+    float: left;
+}
+
+.str{
+/*    display: table-cell;*/
+    margin: 0;
+    line-height: 300px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 105px;
+}
+#message1, #message2, #message3, #message4, #message5, #message6,  #message7 {
+    width: 100%;
+    height: 100%;
+    /* color:  #ffff; */
+    /* transform: scaleX(0.77); */
+}
+.msg{
+    transform: scaleX(0.77);
+}
+
+#box4-1, #box1-1 {
+    clear: both;
+    text-align: center;
+    margin: 0;
+}
+
+#box4-2, #box1-2 {
+    clear: both;
+    text-align: center;
+    margin: 0;
+}
+
+#box4-3, #box1-3 {
+    clear: both;
+    text-align: center;
+    margin: 0;
+}
+
+#side_banner {
+    text-align: center;
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    margin: 0;
+    border: 1px solid skyblue;
+    color: #7F7259;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+#side_banner h2 {
+    background-color: skyblue;
+    color: black;
+    padding: 7px;
+    font-size: 29px;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+#side_banner ul {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+#side_banner ul li { margin-bottom: 10px; }
+
+#side_contact h2 {
+    background-color: skyblue;
+    color: black;
+    padding: 7px;
+    font-size: 20px;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+#side_contact {
+    margin-bottom: 30px;
+    border: 1px solid skyblue;
+    color: black;
+    text-align: center;
+    position: fixed;
+    top: 550px;
+    right: 10px;
+    margin: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.footer-wrap {
+    display: inline-block;
+    margin: 0%;
+}
+
+.footer-top, .footer-buy, .footer-wear, .footer-live, .footer-life, .footer-safe, .footer-convenient, .footer-play {
+    display: inline-block;
+    margin: 29px;
+    margin-bottom: 10px;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.footer1, .footer2, .footer3, .footer4, .footer5, .footer6, .footer7, .footer8 {
+    list-style: none;
+    padding: 0;
+    line-height:40px;
+    font-size: 15px;
+}
+
+.footer-wrap {
+    color: black;
+    text-align: center;
+}
+
+.footer-wrap h5 {
+    border-bottom: 3px solid skyblue;
+    padding: 10px;
+}
+
+.footer-wrap a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-wrap a:hover {
+    color: deeppink;
+}
+
+.footer-wrap .cmark {
+    display: block;
+    padding: 10px;
+    border-top: 1px solid gray;
+    width: 80%;
+    margin: 0 auto;
+    color: gray;
+}
+
+#copy {
+    text-align: center;
+}
+
+#page_top{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #ef3f98;
+    opacity: 0.6;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  #page_top a::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+@media screen and (max-width : 500px) { 
+    /*　画面サイズが500pxからはここを読み込む　
+    .box3 p{
+        /* margin: 0; 
+        padding: 0;
+        text-align: center; */
+        font-size: 40px;
+        /* font-family: "Nico Moji"; */
+        font-weight: 900;
+    }
+    #warpper {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .footer-wrap .footer-top, .footer-buy, .footer-safe, .footer-convenient, .footer-play {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .footer-wrap .cpr {
+        display: inline;
+    }
+}
+
+.visible, .invisible {
+    opacity: 0.0;
+    transition: opacity 2s ease;
+}
+.visible {
+    opacity: 1.0;
+}
+
+#wrapper {
+    margin-top: 120px;
+}
+
+.carousel {
+    text-align: center;
+}
+
+.section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#entry {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.btn {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#PasswordHelp {
+    opacity: 0.8;
+}
+
+.a {
+    color: blue;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.d-grid {
+    text-align: center;
+}

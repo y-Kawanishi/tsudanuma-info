@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset='utf-8' />
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/convenient.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <title>（実験用）</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html"><img src="../img/つだぬまいんふぉ.png" width="120" height="70" alt="つだぬまいんふぉ"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./wear.html">服</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./buy.html">食材</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./live.html">雑貨</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="./life.html">暮らす</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./safe.html">街の安全</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./convenient.html">交通アクセス</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./play.html">遊ぶ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../template/create.php">新規会員登録</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../template/login.php">ログイン</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div id="wrapper" class="container w-80">
+      <div id="page_top"><a href="#"></a></div>
+      <div class="box3">
+        <p>交通アクセス</p>
+      </div>
+      <p class="text">乗り換えなしで行ける主要駅と所要時間</p>
+      <table class="table train">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">駅名</th>
+            <th scope="col">所要時間</th>
+            <th scope="col">路線と出発駅</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>東京駅</th>
+            <td>約28分</td>
+            <td>JR総武線津田沼駅</td>
+          </tr>
+          <tr>
+            <th>品川駅</th>
+            <td>約38分</td>
+            <td>JR総武線津田沼駅</td>
+          </tr>
+          <tr>
+            <th>秋葉原駅</th>
+            <td>約35分</td>
+            <td>JR総武線津田沼駅</td>
+          </tr>
+          <tr>
+            <th>千葉駅</th>
+            <td>約15分</td>
+            <td>JR総武線津田沼駅</td>
+          </tr>
+          <tr>
+            <th>船橋駅</th>
+            <td>約4分</td>
+            <td>JR総武線津田沼駅</td>
+          </tr>
+          <tr>
+            <th>成田空港駅</th>
+            <td>約60分</td>
+            <td>JR総武線津田沼駅</td>
+          </tr>
+          <tr>
+            <th>横浜駅</th>
+            <td>約60分</td>
+            <td>JR横須賀線津田沼駅</td>
+          </tr>
+          <tr>
+            <th>松戸駅</th>
+            <td>約43分</td>
+            <td>新京成線京成津田沼駅</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text">主要駅からの終電時間</p>
+      <table class="table train">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">駅名</th>
+            <th scope="col">平日(発)</th>
+            <th scope="col">津田沼着</th>
+            <th scope="col">土日祝(発)</th>
+            <th scope="col">津田沼着</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>東京駅</th>
+            <td>00:39</td>
+            <td>01:20</td>
+            <td>00:39</td>
+            <td>01:20</td>
+          </tr>
+          <tr>
+            <th>品川駅</th>
+            <td>00:26</td>
+            <td>01:20</td>
+            <td>00:26</td>
+            <td>01:20</td>
+          </tr>
+          <tr>
+            <th>秋葉原駅</th>
+            <td>00:46</td>
+            <td>01:20</td>
+            <td>00:46</td>
+            <td>01:20</td>
+          </tr>
+          <tr>
+            <th>千葉駅</th>
+            <td>00:59</td>
+            <td>01:15</td>
+            <td>00:46</td>
+            <td>01:03</td>
+          </tr>
+          <tr>
+            <th>船橋駅</th>
+            <td>01:15</td>
+            <td>01:20</td>
+            <td>01:15</td>
+            <td>01:20</td>
+          </tr>
+          <tr>
+            <th>成田空港駅</th>
+            <td>23:45</td>
+            <td>01:01</td>
+            <td>23:45</td>
+            <td>01:03</td>
+          </tr>
+          <tr>
+            <th>横浜駅</th>
+            <td>23:50</td>
+            <td>01:20</td>
+            <td>23:50</td>
+            <td>01:20</td>
+          </tr>
+          <tr>
+            <th>松戸駅（京成津田沼駅）</th>
+            <td>23:44</td>
+            <td>00:26</td>
+            <td>23:44</td>
+            <td>00:26</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="footer-wrapper" class="container w100">
+      <footer>　
+        <div class="footer-wrap">
+          <div class="footer-top">
+            <h5>Top</h5>
+            <ul class="footer1">
+              <li><a href="./index.html">トップページ</a></li>
+            </ul>
+          </div>
+          <div class="footer-wear">
+            <h5>Wear</h5>
+            <ul class="footer6">
+                <li><a href="./wear.html">服選び</a></li>
+            </ul>
+          </div>
+          <div class="footer-buy">
+            <h5>Buy</h5>
+            <ul class="footer2">
+              <li><a href="./buy.html">食材</a></li>
+            </ul>
+          </div>
+          <div class="footer-live">
+            <h5>Interior</h5>
+            <ul class="footer7">
+              <li><a href="./live.html">雑貨</a></li>
+            </ul>
+          </div>
+          <div class="footer-life">
+            <h5>Life</h5>
+            <ul class="footer8">
+              <li><a href="./life.html">暮らす</a></li>
+            </ul>
+          </div>
+          <div class="footer-safe">
+            <h5>Safe</h5>
+            <ul class="footer3">
+              <li><a href="./safe.html">街の安全</a></li>
+            </ul>
+          </div>
+          <div class="footer-convenient">
+            <h5>Convenient</h5>
+            <ul class="footer4">
+              <li><a href="./convenient.html">交通アクセス</a></li>
+            </ul>
+          </div>
+          <div class="footer-play">
+            <h5>Play</h5>
+            <ul class="footer5">
+              <li><a href="./play.html">遊ぶ</a></li>
+            </ul>
+          </div>
+        </div>　　
+        <p id="copy">
+          &copy;Copy Rights . 2020-2021 つだぬまいんふぉ . All Rights Reserved
+          <img src="../img/つだぬまいんふぉ.png" width="80" height="50" alt="つだぬまいんふぉ">
+        </p>
+      </footer>
+    </div>
+</body>
+</html>
