@@ -11,10 +11,7 @@ foreach($stmt as $row){
     $id = $row['id'];
     $pass2 = $row['pass'];
 }
-echo "<br>";
     if ($pass2 == $pass){
-        echo "ok";
-        // SESSION削除
         $_SESSION = array();
         $_SESSION["id"] = $id;
         header('Location: ../template/index.php');

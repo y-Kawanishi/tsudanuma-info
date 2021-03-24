@@ -38,13 +38,21 @@ $ docker-compose up -d
 $ docker ps -a
 ```
 #### mysqlのコンテナIDをコピーし、下記３ファイルを書き換える。
-
-* /tsudanuma-info/htdocs/dbconnect/mysqli_connect.php
 * /tsudanuma-info/htdocs/dbconnect/pdo_connect.php
-* /tsudanuma-info/htdocs/register_func-master/core/config.php
+
+## 停止・再開
+
+#### コンテナの停止
+```
+$ docker-compose stop
+```
+#### コンテナの再開
+```
+$ docker-compose start
+```
 
 #### 確認
-* [サイト画面](http://localhost)
+* [サイト画面](http://localhost/html/index.html)
 * [DB画面](http://localhost:8080)
 
 ## 削除
@@ -56,4 +64,15 @@ $ docker-compose down --volumes
 #### 立てたコンテナの再起動　=> DockerイメージをビルドしたあとにDockerFileを変更したりした場合は再びビルドする必要がある
 ```
 $ docker-compose up -d --build
+```
+
+
+## gitの管理からコンテナIDの記載されたファイルを回避する
+#### 無視
+```
+git update-index --skip-worktree htdocs\dbconnect\pdo_connect.php
+```
+#### 監視
+```
+git update-index --no-skip-worktree htdocs\dbconnect\pdo_connect.php
 ```
