@@ -48,7 +48,10 @@
                         <a class="nav-link" href="./play.php">遊ぶ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../template/user.php">会員登録情報</a>
+                        <a class="nav-link" href="./user.php">会員登録情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/coupon.html">クーポン</a>
                     </li>
                 </ul>
             </div>

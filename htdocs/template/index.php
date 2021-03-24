@@ -16,7 +16,8 @@ include("./header.php");
 
 ?>
     <div class="box3">
-      <p>ようこそ <?=$name?> さん</p>
+      <p>ようこそ津田沼へ</p>
+      <h2>こんにちは　<?=$name?> さん</h2>
     </div>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-interval=3000 data-ride="carousel">
       <div class="carousel-inner">
@@ -120,14 +121,17 @@ include("./header.php");
     <section id="side_banner">
         <h2>関連リンク</h2>
         <ul>
-          <li><a href="../html/logout.html">ログアウト</a></li>
-          <li><a href="./wear.php">服</a></li>
-          <li><a href="./buy.php">食材</a></li>
-          <li><a href="./live.php">雑貨</a></li>
-          <li><a href="./life.php">暮らす</a></li>
+          <li><a href="./wear.php">服を探す</a></li>
+          <li><a href="./buy.php">食材を探す</a></li>
+          <li><a href="./live.php">雑貨を探す</a></li>
+          <li><a href="./life.php">津田沼で暮らす</a></li>
           <li><a href="./safe.php">街の安全</a></li>
           <li><a href="./convenient.php">交通アクセス</a></li>
-          <li><a href="./play.php">遊ぶ</a></li>
+          <li><a href="./play.php">津田沼で遊ぶ</a></li>
+          <li><a>-----------------</a></li>
+          <li><a href="../html/coupon.html">地域限定クーポン</a></li>
+          <li><a href="./user.php">会員登録情報</a></li>
+          <li><a href="../html/logout.html">ログアウト</a></li>
         </ul>
     </section>
   </aside>

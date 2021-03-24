@@ -17,7 +17,7 @@ foreach($stmt as $row){
         header('Location: ../template/index.php');
         exit;
     }else{
-        $_SESSION['err_msg2'] = "パスワードが違います";
+        $_SESSION['err_msg2'] = "";
         header('Location: ../template/login.php');
         exit;
     }

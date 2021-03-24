@@ -68,6 +68,9 @@ foreach($stmt as $row){
                     <li class="nav-item active">
                         <a class="nav-link" href="./user.php">会員登録情報</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/coupon.html">クーポン</a>
+                    </li>
                 </ul>
             </div>
         </nav>
