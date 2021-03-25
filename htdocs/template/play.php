@@ -1,4 +1,7 @@
-<?php include("./header.php"); ?>
+<?php
+  require_once("../account/loginstatus.php");
+  include("./header.php"); 
+?>
 <link rel="stylesheet" href="../css/play.css">
 <div class="box3">
         <p>遊 ぶ</p>
