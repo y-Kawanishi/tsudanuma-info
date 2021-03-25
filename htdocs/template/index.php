@@ -10,7 +10,7 @@ $stmt = $pdo -> query($sql);
 foreach($stmt as $row){
     $name = $row["name"];
 }
-
+$title = "TOP";
 include("./header.php");
 
 ?>

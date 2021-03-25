@@ -1,4 +1,5 @@
 <?php
+  $title = "街の安全";
   require_once("../account/loginstatus.php");
   include("./header.php"); 
 ?>

@@ -1,9 +1,6 @@
 <?php
 session_start();
 // $_SESSION = array();
-if( isset($_SESSION['err_msg2']) ){
-    echo $_SESSION['err_msg2'];
-}
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -63,6 +60,13 @@ if( isset($_SESSION['err_msg2']) ){
                 </ul>
             </div>
         </nav>
+<?php
+    if( isset($_SESSION['err_msg2']) ){
+?>
+        <div class="alert alert-danger" role="alert"><?=$_SESSION['err_msg2']?></div>
+<?php
+    }
+?>
         <div id="wrapper" class="container w-50">
             <div id="page_top"><a href="#"></a></div>
             <section class="section">

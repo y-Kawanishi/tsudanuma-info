@@ -1,4 +1,5 @@
 <?php
+  $title = "交通アクセス";
   require_once("../account/loginstatus.php");
   include("./header.php"); 
 ?>

@@ -1,4 +1,5 @@
 <?php
+  $title = "雑貨";
   require_once("../account/loginstatus.php");
   include("./header.php"); 
 ?>

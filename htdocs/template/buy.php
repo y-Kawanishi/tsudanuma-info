@@ -1,4 +1,5 @@
 <?php
+  $title = "食材";
   require_once("../account/loginstatus.php");
   include("./header.php"); 
 ?>
