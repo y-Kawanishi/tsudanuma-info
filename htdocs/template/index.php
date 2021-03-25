@@ -58,7 +58,7 @@ include("./header.php");
       <div class="card-body">
         <h5 class="card-title">Life Wear</h5>
         <p class="card-text">津田沼には低価格かつ高品質のアパレルショップが多くあります。さらには老若男女問わず着こなせる店舗も揃っています。</p>
-        <a href="../html/wear.php" class="btn btn-primary">検索</a>
+        <a href="./wear.php" class="btn btn-primary">検索</a>
       </div>
     </div>
     <div data-trigger class="card card1" style="width: 18rem;">
@@ -66,7 +66,7 @@ include("./header.php");
       <div class="card-body">
         <h5 class="card-title">食材選び</h5>
         <p class="card-text">津田沼には朝早くから夜遅くまで営業しているお店や、24時間営業の店舗など、住民のニーズに合わせたお店が多くあります。</p>
-        <a href="../html/buy.php" class="btn btn-primary">検索</a>
+        <a href="./buy.php" class="btn btn-primary">検索</a>
       </div>
     </div>
     <div data-trigger class="card card1" style="width: 18rem;">
@@ -74,7 +74,7 @@ include("./header.php");
       <div class="card-body">
         <h5 class="card-title">インテリア雑貨</h5>
         <p class="card-text">津田沼には家具やインテリア雑貨を取り揃えたお店が多くあります。新生活を始めるのに最適です。</p>
-        <a href="../html/live.php" class="btn btn-primary">検索</a>
+        <a href="./live.php" class="btn btn-primary">検索</a>
       </div>
     </div>
     </div>
@@ -84,7 +84,7 @@ include("./header.php");
       <div class="card-body">
         <h5 class="card-title">暮らす</h5>
         <p class="card-text">津田沼に住むために必要な情報を掲載しています。ゴミの出し方などご参考までにどうぞ！</p>
-        <a href="../html/life.php" class="btn btn-primary">検索</a>
+        <a href="./life.php" class="btn btn-primary">検索</a>
       </div>
     </div>
     <div data-trigger class="card card2" style="width: 18rem;">
@@ -92,7 +92,7 @@ include("./header.php");
       <div class="card-body">
         <h5 class="card-title">街の安全</h5>
         <p class="card-text">津田沼は夜道も明るく、人通りが多いのが特徴です。そのため女性や子供連れでも安心して暮らせる街になっています。</p>
-        <a href="../html/safe.php" class="btn btn-primary">検索</a>
+        <a href="./safe.php" class="btn btn-primary">検索</a>
       </div>
     </div>
     </div>
@@ -102,7 +102,7 @@ include("./header.php");
       <div class="card-body">
         <h5 class="card-title">交通アクセス</h5>
         <p class="card-text">JR総武快速線が停車する津田沼駅、また新京成電鉄 終着駅にもなっている京成津田沼駅とアクセスに優れた津田沼を紹介します。</p>
-        <a href="../html/convenient.php" class="btn btn-primary">検索</a>
+        <a href="./convenient.php" class="btn btn-primary">検索</a>
       </div>
     </div>
     <div data-trigger class="card card3" style="width: 18rem;">
@@ -110,7 +110,7 @@ include("./header.php");
       <div class="card-body">
         <h5 class="card-title">遊ぶ</h5>
         <p class="card-text">津田沼には広々とした公園や、アミューズメント施設が沢山あります。週末に家族やペットと散歩、遊びに出掛けるコースとしては最適です。</p>
-        <a href="../html/play.php" class="btn btn-primary">検索</a>
+        <a href="./play.php" class="btn btn-primary">検索</a>
       </div>
     </div>
   </div>
