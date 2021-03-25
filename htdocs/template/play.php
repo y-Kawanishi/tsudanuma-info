@@ -1,4 +1,8 @@
-<?php include("./header.php"); ?>
+<?php
+  $title = "遊ぶ";
+  require_once("../account/loginstatus.php");
+  include("./header.php"); 
+?>
 <link rel="stylesheet" href="../css/play.css">
 <div class="box3">
         <p>遊 ぶ</p>

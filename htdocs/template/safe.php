@@ -1,4 +1,8 @@
-<?php include("./header.php"); ?>
+<?php
+  $title = "街の安全";
+  require_once("../account/loginstatus.php");
+  include("./header.php"); 
+?>
 <link rel="stylesheet" href="../css/safe.css">
 <div class="box3">
     <p>街の安全</p>

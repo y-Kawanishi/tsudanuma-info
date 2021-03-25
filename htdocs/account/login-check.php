@@ -11,13 +11,13 @@ foreach($stmt as $row){
     $id = $row['id'];
     $pass2 = $row['pass'];
 }
-    if ($pass2 == $pass){
-        $_SESSION = array();
-        $_SESSION["id"] = $id;
-        header('Location: ../template/index.php');
-        exit;
-    }else{
-        $_SESSION['err_msg2'] = "";
-        header('Location: ../template/login.php');
-        exit;
-    }
+if(password_verify($pass, $pass2)){
+    $_SESSION = array();
+    $_SESSION["id"] = $id;
+    header('Location: ../template/index.php');
+    exit;
+}else{
+    $_SESSION['err_msg2'] = "パスワードが違います";
+    header('Location: ../template/login.php');
+    exit;
+}

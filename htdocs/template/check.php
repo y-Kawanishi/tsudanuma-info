@@ -26,13 +26,13 @@ if($pass != $pass2){
     $_SESSION['err_msg'] .= "同じパスワードを入力して下さい。";
     header('Location: ./create.php');
     exit;
-}elseif(strlen($pass) != 4){
-    $_SESSION['err_msg'] .= "パスワードは4桁で入力して下さい。";
+}elseif(strlen($pass) < 4){
+    $_SESSION['err_msg'] .= "パスワードは4桁以上で入力して下さい。";
     header('Location: ./create.php');
     exit;
+}else{
+    $_SESSION['system_msg'] = "会員登録が完了しました。";
 }
-
-
 ?>
 
 <!DOCTYPE html>

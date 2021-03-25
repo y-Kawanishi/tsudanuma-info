@@ -1,9 +1,16 @@
 <?php
 session_start();
-// $_SESSION = array();
-if( isset($_SESSION['err_msg2']) ){
-    echo $_SESSION['err_msg2'];
+
+if(isset($_SESSION["id"])==TRUE){
+    header('Location: ./index.php');
+    exit;
 }
+if( isset($_SESSION['err_msg2']) ){
+    $err_msg2 = $_SESSION['err_msg2'];
+}elseif ( isset($_SESSION['system_msg']) ){
+    $system_msg = $_SESSION['system_msg'];
+}
+session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -63,6 +70,17 @@ if( isset($_SESSION['err_msg2']) ){
                 </ul>
             </div>
         </nav>
+<?php
+    if ( isset($err_msg2) ){
+?>
+        <div class="alert alert-danger" role="alert"><?=$err_msg2?></div>
+<?php
+    } elseif ( isset($system_msg) ){
+?>
+        <div class="alert alert-success" role="alert"><?=$system_msg?></div>
+<?php 
+    }
+?>
         <div id="wrapper" class="container w-50">
             <div id="page_top"><a href="#"></a></div>
             <section class="section">

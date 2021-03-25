@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet">
         
-        <title>（実験用）</title>
+        <title><?=$title?></title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">

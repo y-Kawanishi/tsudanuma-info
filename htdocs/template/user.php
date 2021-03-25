@@ -1,5 +1,5 @@
 <?php
-session_start();
+  require_once("../account/loginstatus.php");
 
 $id = $_SESSION['id'];
 include "../dbconnect/pdo_connect.php";

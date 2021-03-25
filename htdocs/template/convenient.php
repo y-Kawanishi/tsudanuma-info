@@ -1,4 +1,8 @@
-<?php include("./header.php"); ?>
+<?php
+  $title = "交通アクセス";
+  require_once("../account/loginstatus.php");
+  include("./header.php"); 
+?>
 <link rel="stylesheet" href="../css/convenient.css">
 <div class="box3">
         <p>交通アクセス</p>

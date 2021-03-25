@@ -1,4 +1,8 @@
-<?php include("./header.php"); ?>
+<?php
+  $title = "食材";
+  require_once("../account/loginstatus.php");
+  include("./header.php"); 
+?>
 <link rel="stylesheet" href="../css/buy.css">
 <div class="box3">
         <p>食材選び</p>
