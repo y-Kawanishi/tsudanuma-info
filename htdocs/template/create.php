@@ -1,8 +1,8 @@
 <?php
 session_start();
-// $_SESSION = array();
+
 if( isset($_SESSION['err_msg']) ){
-    echo $_SESSION['err_msg'];
+    $err_msg = $_SESSION['err_msg'];
 }
 ?>
 <!DOCTYPE html>
@@ -63,6 +63,13 @@ if( isset($_SESSION['err_msg']) ){
                 </ul>
             </div>
         </nav>
+<?php
+    if ( isset($err_msg) ){
+?>
+        <div class="alert alert-danger" role="alert"><?=$err_msg?></div>
+<?php
+    }
+?>
         <div id="wrapper" class="container w-50">
         <div id="page_top"><a href="#"></a></div>
             <section class="section">
