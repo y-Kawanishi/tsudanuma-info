@@ -104,13 +104,13 @@ session_destroy();
             <div id="page_top"><a href="#"></a></div>
             <section class="section">
                 <form id="entry" method="POST" action="../account/login-check.php">
-                    <img class="mb-4" src="../img/つだぬまいんふぉ.png" alt="146" width="" height="97">
-                    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                    <img class="mb-4" src="../img/つだぬまいんふぉ2.png" alt="146" width="" height="72">
+                    <h1 class="h3 mb-3 fw-normal">ログイン画面</h1>
                     <label for="exampleInputEmail1" class="form-label"></label>
                     <input type="email" name="email" id="exampleInputEmail1" class="form-control" placeholder="Email address" required autofocus>
                     <label for="exampleInputPassword1" class="form-label"></label>
                     <input type="password" name="pass" id="exampleInputPassword1" class="form-control" placeholder="Password" required>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="submit" class="btn btn-primary">ログイン</button>
                 </form>
             </section>
         </div>
