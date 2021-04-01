@@ -65,3 +65,29 @@ INSERT INTO `food` (`brand`, `branch`, `address`, `access`, `time`, `tell`, `img
 ("イトーヨーカドー", "津田沼店", "習志野市津田沼1-10-30", "新津田沼駅から徒歩1分", "10:00-22:00", "047-479-3111", "ヨーカドー.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.480307628056!2d140.02155391548018!3d35.68979638019234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228025d61384b9%3A0x9a071f6ca258c411!2z44Kk44OI44O844Oo44O844Kr44OJ44O8IOa0peeUsOayvOW6lw!5e0!3m2!1sja!2sjp!4v1607095623281!5m2!1sja!2sjp"),
 ("Loharu", "津田沼 食彩館", "習志野市谷津7-7-1", "JR津田沼駅から徒歩3分", "10:00-21:00", "047-405-2250", "食彩館.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4460887621444!2d140.0160786154803!3d35.6906386801922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187f8a05772437%3A0x18b6499b9a653bf0!2zTG9oYXJ15rSl55Sw5rK8!5e0!3m2!1sja!2sjp!4v1607095686310!5m2!1sja!2sjp");
 COMMIT;
+
+
+CREATE TABLE IF NOT EXISTS `goods` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `brand` varchar(255) DEFAULT NULL,
+  `branch` varchar(255) DEFAULT NULL,
+  `address` varchar(255) NOT NULL,
+  `access` varchar(255) NOT NULL,
+  `time` varchar(11) NOT NULL,
+  `tell` varchar(12) NOT NULL,
+  `img` varchar(128) DEFAULT "0.gif",
+  `map` varchar(512) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+INSERT INTO `goods` (`brand`, `branch`, `address`, `access`, `time`, `tell`, `img`, `map`) VALUES
+("無印良品", "津田沼PARCO店", "船橋市前原西2-18-1 津田沼PARCO B館 5F", "JR津田沼駅から徒歩2分", "10:00-21:00", "047-479-5678", "無印良品.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3760603899705!2d140.0199454154804!3d35.69236238019177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228021295d6edb%3A0x4eefa42a30fa319e!2z54Sh5Y2w6Imv5ZOBIOa0peeUsOayvOODkeODq-OCsw!5e0!3m2!1sja!2sjp!4v1607829395825!5m2!1sja!2sjp"),
+("ニトリ", "イトーヨーカドー津田沼店", "習志野市津田沼1-10-30 イトーヨーカドー 津田沼", "新津田沼駅から徒歩1分", "10:00-21:00", "0120-014-210", "ニトリ.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.481883880919!2d140.02172291548015!3d35.68975758019231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228025d6094329%3A0x8b072781d4358745!2z44OL44OI44OqIOOCpOODiOODvOODqOODvOOCq-ODieODvOa0peeUsOayvOW6lw!5e0!3m2!1sja!2sjp!4v1607829575114!5m2!1sja!2sjp"),
+("ユザワヤ", "津田沼店", "習志野市谷津7-7-1 Loharu 津田沼店", "JR津田沼駅から徒歩2分", "10:00-20:00", "047-474-4141", "ユザワヤ.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.452231390627!2d140.01594431548043!3d35.690487480192076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187f8a06554c75%3A0xc0aa6dce3e386721!2z44Om44K244Ov44Ok5rSl55Sw5rK85bqX!5e0!3m2!1sja!2sjp!4v1607913502638!5m2!1sja!2sjp"),
+("ワンズテラス", "津田沼PARCO店", "船橋市前原西2-18-1 津田沼PARCO 5F", "JR津田沼駅から徒歩2分", "10:00-21:00", "047-403-3900", "ワンズテラス.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3794568560447!2d140.01999021548033!3d35.692278780191764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602280213b60fa49%3A0x188052b463446e79!2z44Ov44Oz44K644OG44Op44K5T25lJ3MgdGVycmFjZea0peeUsOayvOODkeODq-OCsw!5e0!3m2!1sja!2sjp!4v1607829956475!5m2!1sja!2sjp"),
+("チャーミー", "モリシア津田沼店", "習志野市谷津1-16-1", "JR津田沼駅から徒歩2分", "10:00-21:00", "047-411-7207", "チャーミー.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.492799797459!2d140.01714311548017!3d35.68948888019228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602280275a12873f%3A0xe9d452b36284c2f1!2z44OB44Oj44O844Of44O8IOa0peeUsOayvOW6lw!5e0!3m2!1sja!2sjp!4v1607830222339!5m2!1sja!2sjp"),
+("studio CLIP", "津田沼PARCO店", "船橋市前原西2-18-1 津田沼PARCO B館 1F", "JR津田沼駅から徒歩2分", "10:00-21:00", "047-477-5138", "CLIP.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.384957816354!2d140.0198302154803!3d35.69214338019177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602281c938f2720f%3A0x487c1be0ebf28b09!2zc3R1ZGlvIENMSVAg5rSl55Sw5rK844OR44Or44Kz!5e0!3m2!1sja!2sjp!4v1607830423249!5m2!1sja!2sjp"),
+("ヴィレッジヴァンガード", "津田沼PARCO店", "船橋市前原西2-18-1 津田沼PARCO A館 5F", "JR津田沼駅から徒歩2分", "10:00-21:00", "047-403-7577", "ヴィレヴァン.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.404869191255!2d140.0193636154802!3d35.69165328019187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602280212dc9e401%3A0x67e319453c507d42!2z44O044Kj44Os44OD44K444O044Kh44Oz44Ks44O844OJ5rSl55Sw5rK844OR44Or44Kz5bqX!5e0!3m2!1sja!2sjp!4v1607833321314!5m2!1sja!2sjp");
+COMMIT;
