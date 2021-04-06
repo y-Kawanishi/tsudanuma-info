@@ -13,6 +13,9 @@
 .off {
     display: none;
 }
+#pic, #map{
+    margin-top: 10px;
+}
 #preview img {
     width: 200px;
     margin: 10px;
