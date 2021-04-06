@@ -1,0 +1,20 @@
+.form-control {
+    display: initial;
+}
+.time-area{
+    width: 10%;
+}
+.tell-area{
+    width: 20%;
+}
+.on{
+    display: block;
+}
+.off {
+    display: none;
+}
+#preview img {
+    width: 200px;
+    margin: 10px;
+    border: solid 1px silver;
+  }
