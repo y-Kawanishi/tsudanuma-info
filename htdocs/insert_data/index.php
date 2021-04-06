@@ -45,6 +45,8 @@
             <label for="tell3">-</label>
             <input type="number" name="tell3" id="tell3" class="form-control tell-area" placeholder="Tell3" required>
             <input type="text" name="map" id="map" class="form-control" placeholder="map" required>
+            <small>※&lt;iframe src="https://maps.google.co.jp/maps?output=embed&q=原宿駅"&gt;&lt;/iframe&gt;の場合、</small>
+            <small>&nbsp;&nbsp;https://maps.google.co.jp/maps?output=embed&q=原宿駅と入力して下さい。</small>
             <input id="pic" type="file" name="pic" accept="image/*" required>
             <div id="preview"></div>
             <input type="submit" value="送信" class="mt-2 w-100 btn btn-lg btn-primary">
