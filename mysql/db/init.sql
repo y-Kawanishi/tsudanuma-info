@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `apparel` (
   `address` varchar(255) NOT NULL,
   `access` varchar(255) NOT NULL,
   `time` varchar(11) NOT NULL,
-  `tell` varchar(12) NOT NULL,
+  `tell` varchar(13) NOT NULL,
   `img` varchar(128) DEFAULT "0.gif",
   `map` varchar(512) NOT NULL,
   PRIMARY KEY (`id`)
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `food` (
   `address` varchar(255) NOT NULL,
   `access` varchar(255) NOT NULL,
   `time` varchar(11) NOT NULL,
-  `tell` varchar(12) NOT NULL,
+  `tell` varchar(13) NOT NULL,
   `img` varchar(128) DEFAULT "0.gif",
   `map` varchar(512) NOT NULL,
   PRIMARY KEY (`id`)
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `goods` (
   `address` varchar(255) NOT NULL,
   `access` varchar(255) NOT NULL,
   `time` varchar(11) NOT NULL,
-  `tell` varchar(12) NOT NULL,
+  `tell` varchar(13) NOT NULL,
   `img` varchar(128) DEFAULT "0.gif",
   `map` varchar(512) NOT NULL,
   PRIMARY KEY (`id`)
