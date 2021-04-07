@@ -16,7 +16,7 @@ if( $tmp_file != "" &&
    $up_ok = move_uploaded_file( $tmp_file, $up_file);
  }
 }
-$time = $_POST['start_h'].":".$_POST['start_m']."-".$_POST['end_h'].":".$_POST['end_h'];
+$time = $_POST['start_h'].":".$_POST['start_m']."-".$_POST['end_h'].":".$_POST['end_m'];
 $tell = $_POST['tell1']."-".$_POST['tell2']."-".$_POST['tell3'];
 
 
