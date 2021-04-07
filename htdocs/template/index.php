@@ -131,6 +131,9 @@ include("./header.php");
           <li><a href="../insert_data/apparel.php">服の店追加</a></li>
           <li><a href="../insert_data/food.php">食材の店追加</a></li>
           <li><a href="../insert_data/goods.php">雑貨の店追加</a></li>
+          <li><a href="../delete_data/apparel.php">服の店削除</a></li>
+          <li><a href="../delete_data/food.php">食材の店追加</a></li>
+          <li><a href="../delete_data/goods.php">雑貨の店追加</a></li>
           <li><a>-----------------</a></li>
           <li><a href="../html/coupon.html">地域限定クーポン</a></li>
           <li><a href="./user.php">会員登録情報</a></li>

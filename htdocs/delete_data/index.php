@@ -1,3 +1,6 @@
+<head>
+    <title><?=$title?>：店削除</title>
+</head>
 <link rel="stylesheet" href="../css/buy.css">
 <div class="box3">
     <p><?=$title?>：店削除</p>
