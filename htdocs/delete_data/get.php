@@ -43,6 +43,11 @@ foreach($stmt as $row){
         <input type="hidden" name="shop_id" value="<?=$shop_id?>"/>
         <input type="submit" class="btn btn-outline-danger w-100" value="この店を削除する"/><br>
     </form>
+    <form method="POST" action="../update_data/post.php">
+        <input type="hidden" name="table" value="<?=$table?>"/>
+        <input type="hidden" name="shop_id" value="<?=$shop_id?>"/>
+        <input type="submit" class="btn btn-outline-info w-100" value="この店を編集する"/><br>
+    </form>
       <div class="box_shop">
         <p id="<?=$row['id']?>" class="s">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle-fill" viewBox="0 0 16 16">
