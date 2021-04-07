@@ -46,10 +46,10 @@ try{
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet">
-    <div id="wrapper" class="container w-80">
-    <link rel="stylesheet" href="../css/buy.css">
+    <link rel="stylesheet" href="../css/shop.css">
 </head>
  <body>
+ <div id="wrapper" class="container w-80">
     <button type="button" class="btn btn-outline-secondary w-100" onclick="location.href='../template/index.php'">TOPへ戻る</button><br>
       <div class="box_shop mt-0">
         <p id="<?=$_POST['id']?>" class="s pt-0">
@@ -108,3 +108,4 @@ try{
           </thead>
         </table>
       </div>
+  </div>
