@@ -1,7 +1,7 @@
 <?php
 include "../dbconnect/pdo_connect.php";
-$table = $_GET['item'];
-$shop_id = $_GET['id'];
+$table = $_POST['table'];
+$shop_id = $_POST['shop_id'];
 switch ($table) {
     case 'food':
         $title = '食材';
@@ -33,22 +33,16 @@ foreach($stmt as $row){
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/shop.css">
-        <title><?=$title?>：店情報確認画面</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src='../javascripts/imageupload.js'></script>
+        <title><?=$title?>：店削除確認画面</title>
     </head>
     <body>
     <div id="wrapper" class="container w-80">
-    <div class="box3"><?=$title?>：店情報確認画面</div>
-    <form method="POST" action="./post.php">
-        <input type="hidden" name="table" value="<?=$table?>"/>
-        <input type="hidden" name="shop_id" value="<?=$shop_id?>"/>
-        <input type="hidden" name="title" value="<?=$title?>"/>
-        <input type="submit" class="btn btn-outline-danger w-100" value="この店を削除する"/><br>
-    </form>
-    <form method="POST" action="../update_data/index.php">
-        <input type="hidden" name="table" value="<?=$table?>"/>
-        <input type="hidden" name="shop_id" value="<?=$shop_id?>"/>
-        <input type="submit" class="btn btn-outline-info w-100" value="この店を編集する"/><br>
-    </form>
+    <div class="box3"><?=$title?>：店編集確認画面</div>
+    <form method="POST" action="./post.php" enctype="multipart/form-data">
+      <input type="hidden" name="table" value="<?=$table?>"/>
+      <input type="hidden" name="shop_id" value="<?=$shop_id?>"/>
       <div class="box_shop">
         <p id="<?=$row['id']?>" class="s">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle-fill" viewBox="0 0 16 16">
@@ -57,7 +51,7 @@ foreach($stmt as $row){
         </p>
         <img src="../img/<?=$table?>/<?=$row['img']?>" alt="<?=$row['brand']?>" width="400" height="300">
         <div class="map"><iframe src="<?=$row['map']?>" width="400" height="300"></iframe></div>
-        <table class="table">
+        <table class="table mb-0">
           <thead class="thead-dark">
             <tr>
               <th>
@@ -65,7 +59,7 @@ foreach($stmt as $row){
                   <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
                 </svg>
               </th>
-              <td><?=$row['brand']?>　<?=$row['branch']?></td>
+              <td><input type="text" name="brand" value="<?=$row['brand']?>" class="form-control w-50 float-left" style="display:initial;" /><input type="text" name="branch" value="<?=$row['branch']?>" class="form-control w-50"　style="display:initial;" /></td>
             </tr>
             <tr>
               <th>
@@ -74,7 +68,7 @@ foreach($stmt as $row){
                   <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                 </svg>
               </th>
-              <td><?=$row['address']?></td>
+              <td><input type="text" name="address" class="form-control" value="<?=$row['address']?>" /></td>
             </tr>
             <tr>
               <th>
@@ -83,7 +77,7 @@ foreach($stmt as $row){
                   <path d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a5.99 5.99 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A5.99 5.99 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667H5.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
                 </svg>
               </th>
-              <td><?=$row['access']?></td>
+              <td><input type="text" name="access" class="form-control" value="<?=$row['access']?>" /></td>
             </tr>
             <tr>
               <th>
@@ -92,7 +86,7 @@ foreach($stmt as $row){
                   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
                 </svg>
               </th>
-              <td><?=$row['time']?></td>
+              <td><input type="text" name="time" class="form-control" value="<?=$row['time']?>" /></td>
             </tr>
             <tr>
               <th>
@@ -101,11 +95,31 @@ foreach($stmt as $row){
                   <path fill-rule="evenodd" d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z"/>
                 </svg>
               </th>
-              <td><?=$row['tell']?></td>
+              <td><input type="text" name="tell" class="form-control" value="<?=$row['tell']?>" /></td>
+            </tr>
+            <tr>
+              <th>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+                </svg>
+              </th>
+              <td><input type="text" name="map" id="map" class="form-control" value="<?=$row['map']?>" required></td>
+            </tr>
+            <tr>
+              <th>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+              </svg>
+              </th>
+              <td><input id="pic" type="file" name="pic" accept="image/*"><div id="preview"></div></td>
             </tr>
           </thead>
         </table>
+        <input type="hidden" name="pic2" id="pic2" class="form-control" value="<?=$row['img']?>" required>
+        <input type="submit" value="送信" class="mt-2 mb-2 w-100 btn btn-lg btn-secondary">
       </div>
+      </form>
 <?php
 }
 ?>

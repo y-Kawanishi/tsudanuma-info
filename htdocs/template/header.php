@@ -24,31 +24,31 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../template/index.php">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./wear.php">服</a>
+                        <a class="nav-link" href="../template/wear.php">服</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./buy.php">食材</a>
+                        <a class="nav-link" href="../template/buy.php">食材</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./live.php">雑貨</a>
+                        <a class="nav-link" href="../template/live.php">雑貨</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./life.php">暮らす</a>
+                        <a class="nav-link" href="../template/life.php">暮らす</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./safe.php">街の安全</a>
+                        <a class="nav-link" href="../template/safe.php">街の安全</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./convenient.php">交通アクセス</a>
+                        <a class="nav-link" href="../template/convenient.php">交通アクセス</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./play.php">遊ぶ</a>
+                        <a class="nav-link" href="../template/play.php">遊ぶ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./user.php">会員登録情報</a>
+                        <a class="nav-link" href="../template/user.php">会員登録情報</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../html/coupon.html">クーポン</a>

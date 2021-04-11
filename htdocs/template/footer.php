@@ -4,49 +4,49 @@
                     <div class="footer-top">
                         <h5>Top</h5>
                         <ul class="footer1">
-                            <li><a href="./index.php">トップページ</a></li>
+                            <li><a href="../template/index.php">トップページ</a></li>
                         </ul>
                     </div>
                     <div class="footer-wear">
                         <h5>Wear</h5>
                         <ul class="footer6">
-                            <li><a href="./wear.php">服</a></li>
+                            <li><a href="../template/wear.php">服</a></li>
                         </ul>
                     </div>
                     <div class="footer-buy">
                         <h5>Buy</h5>
                         <ul class="footer2">
-                            <li><a href="./buy.php">食材</a></li>
+                            <li><a href="../template/buy.php">食材</a></li>
                         </ul>
                     </div>
                     <div class="footer-live">
                         <h5>Interior</h5>
                         <ul class="footer7">
-                            <li><a href="./live.php">雑貨</a></li>
+                            <li><a href="../template/live.php">雑貨</a></li>
                         </ul>
                     </div>
                     <div class="footer-life">
                         <h5>Life</h5>
                         <ul class="footer8">
-                            <li><a href="./life.php">暮らす</a></li>
+                            <li><a href="../template/life.php">暮らす</a></li>
                         </ul>
                     </div>
                     <div class="footer-safe">
                         <h5>Safe</h5>
                         <ul class="footer3">
-                            <li><a href="./safe.php">街の安全</a></li>
+                            <li><a href="../template/safe.php">街の安全</a></li>
                         </ul>
                     </div>
                     <div class="footer-convenient">
                         <h5>Convenient</h5>
                         <ul class="footer4">
-                            <li><a href="./convenient.php">交通アクセス</a></li>
+                            <li><a href="../template/convenient.php">交通アクセス</a></li>
                         </ul>
                     </div>
                     <div class="footer-play">
                         <h5>Play</h5>
                         <ul class="footer5">
-                            <li><a href="./play.php">遊ぶ</a></li>
+                            <li><a href="../template/play.php">遊ぶ</a></li>
                         </ul>
                     </div>
                 </div>

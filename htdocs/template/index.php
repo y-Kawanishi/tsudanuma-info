@@ -54,7 +54,7 @@ include("./header.php");
     </div> -->
     <div id="box4-1">
     <div data-trigger class="card card1" style="width: 18rem;">
-      <img class="w-100 h-100" src="../img/GU.jpg" alt="アパレル">
+      <img class="w-100 h-100" src="../img/apparel/GU.jpg" alt="アパレル">
       <div class="card-body">
         <h5 class="card-title">Life Wear</h5>
         <p class="card-text">津田沼には低価格かつ高品質のアパレルショップが多くあります。さらには老若男女問わず着こなせる店舗も揃っています。</p>
@@ -62,7 +62,7 @@ include("./header.php");
       </div>
     </div>
     <div data-trigger class="card card1" style="width: 18rem;">
-      <img class="w-100 h-100" src="../img/ヨーカドー.jpg" alt="スーパー">
+      <img class="w-100 h-100" src="../img/food/ヨーカドー.jpg" alt="スーパー">
       <div class="card-body">
         <h5 class="card-title">食材選び</h5>
         <p class="card-text">津田沼には朝早くから夜遅くまで営業しているお店や、24時間営業の店舗など、住民のニーズに合わせたお店が多くあります。</p>
@@ -70,7 +70,7 @@ include("./header.php");
       </div>
     </div>
     <div data-trigger class="card card1" style="width: 18rem;">
-      <img class="w-100 h-100" src="../img/ニトリ.jpg" alt="雑貨">
+      <img class="w-100 h-100" src="../img/goods/ニトリ.jpg" alt="雑貨">
       <div class="card-body">
         <h5 class="card-title">インテリア雑貨</h5>
         <p class="card-text">津田沼には家具やインテリア雑貨を取り揃えたお店が多くあります。新生活を始めるのに最適です。</p>
@@ -128,16 +128,11 @@ include("./header.php");
           <li><a href="./convenient.php">交通アクセス</a></li>
           <li><a href="./play.php">津田沼で遊ぶ</a></li>
           <li><a>-----------------</a></li>
-          <li><a href="../insert_data/apparel.php">服の店追加</a></li>
-          <li><a href="../insert_data/food.php">食材の店追加</a></li>
-          <li><a href="../insert_data/goods.php">雑貨の店追加</a></li>
-          <li><a href="../delete_data/apparel.php">服の店削除</a></li>
-          <li><a href="../delete_data/food.php">食材の店追加</a></li>
-          <li><a href="../delete_data/goods.php">雑貨の店追加</a></li>
-          <li><a>-----------------</a></li>
           <li><a href="../html/coupon.html">地域限定クーポン</a></li>
           <li><a href="./user.php">会員登録情報</a></li>
           <li><a href="../html/logout.html">ログアウト</a></li>
+          <li><a>-----------------</a></li>
+          <li><a href="../admin/entry.php">管理者ページ</a></li>
         </ul>
     </section>
   </aside>

@@ -7,9 +7,13 @@ root/
 　│  ├ account/
 　│  ├ css/
 　│  ├ dbconnect/
+　│  ├ delete_data/
 　│  ├ html/
 　│  ├ img/
-　│  └ template/
+　│  ├ insert_data/
+　│  ├ javascripts/
+　│  ├ template/
+　│  └ update_data/
 　├ mysql/
 　│  ├ db/
 　│  │  └ init.sql

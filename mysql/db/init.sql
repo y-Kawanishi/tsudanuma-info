@@ -11,6 +11,7 @@ CREATE TABLE `user` (
   `month` int(2) NOT NULL,
   `day` int(2) NOT NULL,
   `gender` varchar(3) NOT NULL,
+  `admin` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
