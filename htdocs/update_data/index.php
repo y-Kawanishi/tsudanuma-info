@@ -112,10 +112,11 @@ foreach($stmt as $row){
                 <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
               </svg>
               </th>
-              <td><input id="pic" type="file" name="pic" accept="image/*" required><div id="preview"></div></td>
+              <td><input id="pic" type="file" name="pic" accept="image/*"><div id="preview"></div></td>
             </tr>
           </thead>
         </table>
+        <input type="hidden" name="pic2" id="pic2" class="form-control" value="<?=$row['img']?>" required>
         <input type="submit" value="送信" class="mt-2 mb-2 w-100 btn btn-lg btn-secondary">
       </div>
       </form>
