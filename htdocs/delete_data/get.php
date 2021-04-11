@@ -33,14 +33,15 @@ foreach($stmt as $row){
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/shop.css">
-        <title><?=$title?>：店削除確認画面</title>
+        <title><?=$title?>：店情報確認画面</title>
     </head>
     <body>
     <div id="wrapper" class="container w-80">
-    <div class="box3"><?=$title?>：店削除確認画面</div>
+    <div class="box3"><?=$title?>：店情報確認画面</div>
     <form method="POST" action="./post.php">
         <input type="hidden" name="table" value="<?=$table?>"/>
         <input type="hidden" name="shop_id" value="<?=$shop_id?>"/>
+        <input type="hidden" name="title" value="<?=$title?>"/>
         <input type="submit" class="btn btn-outline-danger w-100" value="この店を削除する"/><br>
     </form>
     <form method="POST" action="../update_data/index.php">
