@@ -104,5 +104,5 @@ CREATE TABLE IF NOT EXISTS `apparel_comments` (
 COMMIT;
 
 INSERT INTO `apparel_comments` (`shop_id`, `comment`, `star`, `user_id`) VALUES
-(1, "接客が良いです", 3, 1, 1);
+(1, "店員さんの接客が良いです", 3, 1, 1);
 COMMIT;
