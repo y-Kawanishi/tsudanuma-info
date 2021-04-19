@@ -103,6 +103,6 @@ CREATE TABLE IF NOT EXISTS `apparel_comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 
-INSERT INTO `apparel` (`shop_id`, `comment`, `star`, `user_id`) VALUES
+INSERT INTO `apparel_comments` (`shop_id`, `comment`, `star`, `user_id`) VALUES
 (1, "接客が良いです", 3, 1, 1);
 COMMIT;
