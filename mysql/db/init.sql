@@ -92,3 +92,17 @@ INSERT INTO `goods` (`brand`, `branch`, `address`, `access`, `time`, `tell`, `im
 ("studio CLIP", "津田沼PARCO店", "船橋市前原西2-18-1 津田沼PARCO B館 1F", "JR津田沼駅から徒歩2分", "10:00-21:00", "047-477-5138", "CLIP.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.384957816354!2d140.0198302154803!3d35.69214338019177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602281c938f2720f%3A0x487c1be0ebf28b09!2zc3R1ZGlvIENMSVAg5rSl55Sw5rK844OR44Or44Kz!5e0!3m2!1sja!2sjp!4v1607830423249!5m2!1sja!2sjp"),
 ("ヴィレッジヴァンガード", "津田沼PARCO店", "船橋市前原西2-18-1 津田沼PARCO A館 5F", "JR津田沼駅から徒歩2分", "10:00-21:00", "047-403-7577", "ヴィレヴァン.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.404869191255!2d140.0193636154802!3d35.69165328019187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602280212dc9e401%3A0x67e319453c507d42!2z44O044Kj44Os44OD44K444O044Kh44Oz44Ks44O844OJ5rSl55Sw5rK844OR44Or44Kz5bqX!5e0!3m2!1sja!2sjp!4v1607833321314!5m2!1sja!2sjp");
 COMMIT;
+
+CREATE TABLE IF NOT EXISTS `apparel_comments` (
+  `num` int(8) NOT NULL AUTO_INCREMENT,
+  `shop_id` int(4) NOT NULL,
+  `comment` varchar(512) NOT NULL,
+  `star` int(1) NOT NULL,
+  `user_id` int(4) NOT NULL,
+  PRIMARY KEY (`num`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+INSERT INTO `apparel` (`shop_id`, `comment`, `star`, `user_id`) VALUES
+(1, "接客が良いです", 3, 1, 1);
+COMMIT;
