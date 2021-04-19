@@ -5,6 +5,7 @@
 root/
 　├ htdocs/
 　│  ├ account/
+　│  ├ admin/
 　│  ├ css/
 　│  ├ dbconnect/
 　│  ├ delete_data/
