@@ -12,7 +12,8 @@ foreach($stmt as $row){
             echo "★";
         }
     ?></p>
-    <p><?=$row[16]?>さん</p>
+    <p><?=$row[17]?>さん</p>
+    <p><?=$row['datetime']?></p>
 <?php
 // print_r($row);
 }
