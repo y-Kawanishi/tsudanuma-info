@@ -99,10 +99,11 @@ CREATE TABLE IF NOT EXISTS `apparel_comments` (
   `comment` varchar(512) NOT NULL,
   `star` int(1) NOT NULL,
   `user_id` int(4) NOT NULL,
+  `datetime` DATETIME NOT NULL,
   PRIMARY KEY (`num`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 
-INSERT INTO `apparel_comments` (`shop_id`, `comment`, `star`, `user_id`) VALUES
-(1, "店員さんの接客が良いです", 3, 1);
+INSERT INTO `apparel_comments` (`shop_id`, `comment`, `star`, `user_id`, `datetime`) VALUES
+(1, "店員さんの接客が良いです", 3, 1, '2021-04-23 21:45:31');
 COMMIT;
