@@ -93,6 +93,7 @@ INSERT INTO `goods` (`brand`, `branch`, `address`, `access`, `time`, `tell`, `im
 ("ヴィレッジヴァンガード", "津田沼PARCO店", "船橋市前原西2-18-1 津田沼PARCO A館 5F", "JR津田沼駅から徒歩2分", "10:00-21:00", "047-403-7577", "ヴィレヴァン.jpg", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.404869191255!2d140.0193636154802!3d35.69165328019187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602280212dc9e401%3A0x67e319453c507d42!2z44O044Kj44Os44OD44K444O044Kh44Oz44Ks44O844OJ5rSl55Sw5rK844OR44Or44Kz5bqX!5e0!3m2!1sja!2sjp!4v1607833321314!5m2!1sja!2sjp");
 COMMIT;
 
+
 CREATE TABLE IF NOT EXISTS `apparel_comments` (
   `num` int(8) NOT NULL AUTO_INCREMENT,
   `shop_id` int(4) NOT NULL,
@@ -105,5 +106,38 @@ CREATE TABLE IF NOT EXISTS `apparel_comments` (
 COMMIT;
 
 INSERT INTO `apparel_comments` (`shop_id`, `comment`, `star`, `user_id`, `datetime`) VALUES
+(1, "店員さんの接客が良いです", 3, 1, '2021-04-23 21:45:31');
+COMMIT;
+
+
+CREATE TABLE IF NOT EXISTS `food_comments` (
+  `num` int(8) NOT NULL AUTO_INCREMENT,
+  `shop_id` int(4) NOT NULL,
+  `comment` varchar(512) NOT NULL,
+  `star` int(1) NOT NULL,
+  `user_id` int(4) NOT NULL,
+  `datetime` DATETIME NOT NULL,
+  PRIMARY KEY (`num`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+
+INSERT INTO `food_comments` (`shop_id`, `comment`, `star`, `user_id`, `datetime`) VALUES
+(1, "店員さんの接客が良いです", 3, 1, '2021-04-23 21:45:31');
+COMMIT;
+
+
+CREATE TABLE IF NOT EXISTS `goods_comments` (
+  `num` int(8) NOT NULL AUTO_INCREMENT,
+  `shop_id` int(4) NOT NULL,
+  `comment` varchar(512) NOT NULL,
+  `star` int(1) NOT NULL,
+  `user_id` int(4) NOT NULL,
+  `datetime` DATETIME NOT NULL,
+  PRIMARY KEY (`num`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+INSERT INTO `goods_comments` (`shop_id`, `comment`, `star`, `user_id`, `datetime`) VALUES
 (1, "店員さんの接客が良いです", 3, 1, '2021-04-23 21:45:31');
 COMMIT;
