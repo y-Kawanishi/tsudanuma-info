@@ -26,14 +26,38 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../template/index.php">Home<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../template/wear.php">服</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        服
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../template/wear.php">情報</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../shop_comment/apparel.php">コメント閲覧</a>
+                        <a class="dropdown-item" href="../shop_comment/push.php?table=apparel">コメント追加</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../template/buy.php">食材</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        食材
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../template/buy.php">情報</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../shop_comment/food.php">コメント閲覧</a>
+                        <a class="dropdown-item" href="../shop_comment/push.php?table=food">コメント追加</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../template/live.php">雑貨</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        雑貨
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../template/live.php">情報</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../shop_comment/goods.php">コメント閲覧</a>
+                        <a class="dropdown-item" href="../shop_comment/push.php?table=goods">コメント追加</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../template/life.php">暮らす</a>
@@ -50,9 +74,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../template/user.php">会員登録情報</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="../html/coupon.html">クーポン</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>
