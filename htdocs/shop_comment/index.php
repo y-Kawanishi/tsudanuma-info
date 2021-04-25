@@ -1,19 +1,36 @@
 <?php
+include("../template/header.php"); 
 include "../dbconnect/pdo_connect.php";
 $sql = "SELECT * FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id";
 $stmt = $pdo -> query($sql);
 foreach($stmt as $row){
 ?>
-    <p>No.<?=$row['num']?></p>
-    <p>ID:<?=$row['brand']?> <?=$row['branch']?></p>
-    <p>コメント：<?=$row['comment']?></p>
-    <p><?php
-        for($i = 0; $i < $row['star']; $i++){
-            echo "★";
-        }
-    ?></p>
-    <p><?=$row[16]?>さん</p>
+    <div class="card w-25 shop">
+        <h5 class="card-header"><?=$row['brand']?> <?=$row['branch']?></h5>
+        <div class="card-body">
+            <h5 class="card-title"><?php
+                for($i = 0; $i < $row['star']; $i++){
+                    echo "★";
+                }
+                for($i = $row['star']; $i < 5; $i++){
+                    echo "☆";
+                }
+            ?></h5>
+            <p class="card-text"><?=$row['comment']?></p>
+            <p><?=$row['datetime']?></p>
+            <p><?=$row[17]?>さん</p>
+            <a href="#" class="btn btn-primary">Go shop</a>
+        </div>
+    </div>
+    <style>
+    .shop{
+        text-align: left;
+        float: left;
+        margin: auto;
+    }
+    </style>
 <?php
 // print_r($row);
 }
+include("../template/footer.php");
 ?>
