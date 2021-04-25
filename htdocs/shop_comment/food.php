@@ -1,7 +1,7 @@
 <?php
-    $title = "食材";
+    $title = "食材コメント閲覧";
     $item = "food";
     $table = "food_comments";
-    require_once("../admin/loginstatus.php");
+    include("../account/loginstatus.php");
     require_once("./index.php"); 
 ?>
