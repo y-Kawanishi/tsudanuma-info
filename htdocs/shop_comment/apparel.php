@@ -1,7 +1,7 @@
 <?php
-    $title = "服";
+    $title = "服コメント閲覧";
     $item = "apparel";
     $table = "apparel_comments";
-    require_once("../admin/loginstatus.php");
+    include("../account/loginstatus.php");
     require_once("./index.php"); 
 ?>
