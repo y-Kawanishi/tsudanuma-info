@@ -12,7 +12,7 @@
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet">
-        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <title><?=$title?></title>
     </head>
     <body>
@@ -34,7 +34,7 @@
                         <a class="dropdown-item" href="../template/wear.php">情報</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../shop_comment/apparel.php">コメント閲覧</a>
-                        <a class="dropdown-item" href="../shop_comment/push.php?table=apparel">コメント追加</a>
+                        <a class="dropdown-item" href="../shop_comment/post.php?table=apparel">コメント追加</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -45,7 +45,7 @@
                         <a class="dropdown-item" href="../template/buy.php">情報</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../shop_comment/food.php">コメント閲覧</a>
-                        <a class="dropdown-item" href="../shop_comment/push.php?table=food">コメント追加</a>
+                        <a class="dropdown-item" href="../shop_comment/post.php?table=food">コメント追加</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -56,7 +56,7 @@
                         <a class="dropdown-item" href="../template/live.php">情報</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../shop_comment/goods.php">コメント閲覧</a>
-                        <a class="dropdown-item" href="../shop_comment/push.php?table=goods">コメント追加</a>
+                        <a class="dropdown-item" href="../shop_comment/post.php?table=goods">コメント追加</a>
                         </div>
                     </li>
                     <li class="nav-item">
