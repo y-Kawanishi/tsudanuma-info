@@ -19,7 +19,7 @@ foreach($stmt as $row){
 ?>
     <tr>
     <th scope="row"><?=$row['shop_id']?></th>
-      <td><a href="<?=$item?>.php?shop_id=<?=$row['shop_id']?>"><?=$row['brand']?> <?=$row['branch']?></a></td>
+      <td><?=$row['brand']?> <?=$row['branch']?> &rsaquo;&rsaquo; <a href="<?=$item?>.php?shop_id=<?=$row['shop_id']?>">評価</a></td>
       <td>★<?=round($row['star_avg'], 3)?></td>
       <td><?=$row['count']?>件</td>
     </tr>
@@ -53,7 +53,7 @@ foreach($stmt as $row){
             <p class="card-text"><?=$row['comment']?></p>
             <p><?=$row['datetime']?></p>
             <p><?=$row[17]?>さん</p>
-            <a href="#" class="btn btn-primary">Go shop</a>
+            <a href="../template/<?=$file?>.php#<?=$row['shop_id']?>" class="btn btn-primary">Go shop</a>
         </div>
     </div>
     <style>
