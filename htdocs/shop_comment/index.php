@@ -1,6 +1,14 @@
 <?php
 include("../template/header.php"); 
 include "../dbconnect/pdo_connect.php";
+$sql = "SELECT shop_id, AVG(star) AS star_avg, brand, branch FROM $table JOIN $item ON $table.shop_id = $item.id GROUP BY shop_id";
+$stmt = $pdo -> query($sql);
+foreach($stmt as $row){
+?>
+    <p><?=$row['brand']?> <?=$row['branch']?>：<?=round($row['star_avg'], 3)?></p>
+<?php
+}
+echo $hoge[2];
 $sql = "SELECT * FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id";
 $stmt = $pdo -> query($sql);
 foreach($stmt as $row){
