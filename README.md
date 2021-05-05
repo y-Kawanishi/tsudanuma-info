@@ -13,6 +13,7 @@ root/
 　│  ├ img/
 　│  ├ insert_data/
 　│  ├ javascripts/
+　│  ├ shop_comment/
 　│  ├ template/
 　│  └ update_data/
 　├ mysql/

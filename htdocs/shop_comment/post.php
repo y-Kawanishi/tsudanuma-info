@@ -37,7 +37,6 @@ foreach($stmt as $row){
 }
 ?>
             </select>
-        <!-- , , , , datetime -->
         <div id="app">
             <label for="formControlRange">★{{ star }}</label>
             <input type="range" v-model="star" class="form-control-range" id="formControlRange" name="star" min="0" max="5">
