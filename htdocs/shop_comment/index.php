@@ -2,13 +2,14 @@
 include("../template/header.php"); 
 include "../dbconnect/pdo_connect.php";
 ?>
+<link rel="stylesheet" href="../css/shop-comment.css">
 <table class="table table-hover">
     <thead>
     <tr>
         <th scope="col">ID</th>
         <th scope="col">名前</th>
-        <th scope="col">星</th>
-        <th scope="col">件数</th>
+        <th scope="col">コメント総数</th>
+        <th scope="col">平均評価</th>
     </tr>
     </thead>
     <tbody>
@@ -20,8 +21,8 @@ foreach($stmt as $row){
     <tr>
     <th scope="row"><?=$row['shop_id']?></th>
       <td><?=$row['brand']?> <?=$row['branch']?> &rsaquo;&rsaquo; <a href="<?=$item?>.php?shop_id=<?=$row['shop_id']?>">評価</a></td>
-      <td>★<?=round($row['star_avg'], 3)?></td>
       <td><?=$row['count']?>件</td>
+      <td>★<?=round($row['star_avg'], 3)?></td>
     </tr>
 <?php
 }
