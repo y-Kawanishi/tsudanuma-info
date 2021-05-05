@@ -5,7 +5,7 @@ $sql = "SELECT shop_id, AVG(star) AS star_avg, brand, branch FROM $table JOIN $i
 $stmt = $pdo -> query($sql);
 foreach($stmt as $row){
 ?>
-    <p><?=$row['brand']?> <?=$row['branch']?>：<?=round($row['star_avg'], 3)?></p>
+    <p><?=$row['brand']?> <?=$row['branch']?>：★<?=round($row['star_avg'], 3)?></p>
 <?php
 }
 echo $hoge[2];
