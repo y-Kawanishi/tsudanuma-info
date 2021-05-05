@@ -32,9 +32,9 @@ foreach($stmt as $row){
 <?php
 echo $hoge[2];
 if ($_GET['shop_id'] == NULL) {
-    $sql = "SELECT * FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id";
+    $sql = "SELECT brand, branch, shop_id, star, comment, datetime, gender, year FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id";
 } else {
-    $sql = "SELECT * FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id WHERE $table.shop_id = {$_GET['shop_id']}";
+    $sql = "SELECT brand, branch, shop_id, star, comment, datetime, gender, year FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id WHERE $table.shop_id = {$_GET['shop_id']}";
 
 }
 $stmt = $pdo -> query($sql);
@@ -52,8 +52,8 @@ foreach($stmt as $row){
                 }
             ?></h5>
             <p class="card-text"><?=$row['comment']?></p>
-            <p><?=$row['datetime']?></p>
-            <p><?=$row[17]?>さん</p>
+            <p><?=date("Y年m月d日 H時i分",strtotime($row['datetime']))?></p>
+            <p><?=round(date('Y') - $row['year'], -1)?>代 <?=$row['gender']?></p>
             <a href="../template/<?=$file?>.php#<?=$row['shop_id']?>" class="btn btn-primary">Go shop</a>
         </div>
     </div>
