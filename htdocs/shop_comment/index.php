@@ -1,15 +1,41 @@
 <?php
 include("../template/header.php"); 
 include "../dbconnect/pdo_connect.php";
-$sql = "SELECT shop_id, AVG(star) AS star_avg, brand, branch FROM $table JOIN $item ON $table.shop_id = $item.id GROUP BY shop_id";
+?>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">名前</th>
+        <th scope="col">星</th>
+        <th scope="col">件数</th>
+    </tr>
+    </thead>
+    <tbody>
+<?php
+$sql = "SELECT shop_id, AVG(star) AS star_avg, brand, branch, COUNT(`shop_id`) AS `count` FROM $table JOIN $item ON $table.shop_id = $item.id GROUP BY shop_id";
 $stmt = $pdo -> query($sql);
 foreach($stmt as $row){
 ?>
-    <p><?=$row['brand']?> <?=$row['branch']?>：★<?=round($row['star_avg'], 3)?></p>
+    <tr>
+    <th scope="row"><?=$row['shop_id']?></th>
+      <td><a href="<?=$item?>.php?shop_id=<?=$row['shop_id']?>"><?=$row['brand']?> <?=$row['branch']?></a></td>
+      <td>★<?=round($row['star_avg'], 3)?></td>
+      <td><?=$row['count']?>件</td>
+    </tr>
 <?php
 }
+?>
+    </tbody>
+</table>
+<?php
 echo $hoge[2];
-$sql = "SELECT * FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id";
+if ($_GET['shop_id'] == NULL) {
+    $sql = "SELECT * FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id";
+} else {
+    $sql = "SELECT * FROM $table JOIN $item JOIN user ON $table.shop_id = $item.id And $table.user_id = user.id WHERE $table.shop_id = {$_GET['shop_id']}";
+
+}
 $stmt = $pdo -> query($sql);
 foreach($stmt as $row){
 ?>
