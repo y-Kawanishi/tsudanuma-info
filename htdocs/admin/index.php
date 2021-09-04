@@ -1,6 +1,15 @@
 <?php
-    require_once("./loginstatus.php");
-    include("../template/header.php");
+$title = "管理者画面";
+require_once("./loginstatus.php");
+include("../template/header.php");
+?>
+
+<link rel="stylesheet" href="../css/play.css">
+<div class="box3">
+  <p>管理者画面</p>
+</div>
+
+<?php
     $linklist = array(
         array("name" => "服の店追加", "comment" => "アパレル系の店の追加処理を行えます。", "path" => "../insert_data/apparel.php"), 
         array("name" => "服の店削除・編集", "comment" => "登録したアパレル系店舗の編集や削除を行えます。", "path" => "../delete_data/apparel.php"), 
@@ -27,6 +36,4 @@
     }
 ?>
 </div>
-<?php
-    include("../template/footer.php"); 
-?>
+<?php include("../template/footer.php"); ?>

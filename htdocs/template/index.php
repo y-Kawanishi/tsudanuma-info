@@ -27,31 +27,16 @@ include("./header.php");
           <img src="../img/警告.jpg" width="900" height="500" alt="警告">
         </div>
         <div class="carousel-item">
-          <img src="../img/谷津干潟.jpg" width="900" height="500" alt="谷津干潟">
+          <img src="../img/play/谷津干潟.jpg" width="900" height="500" alt="谷津干潟">
         </div>
         <div class="carousel-item">
           <img src="../img/PARCO.jpg" width="900" height="500" alt="PARCO">
         </div>
         <div class="carousel-item">
-          <img src="../img/藤崎森林公園2.jpg" width="900" height="500" alt="藤崎森林公園">
+          <img src="../img/play/藤崎森林公園2.jpg" width="900" height="500" alt="藤崎森林公園">
         </div>
       </div>
     </div>
-    <!-- <div id="box1">
-      <div id="box1-1">
-        <div data-trigger class="circle" id="elem1" onclick="msgfunc1()"><div id="message1"><h1 class="str">衣</h1></div></div>
-        <div data-trigger class="circle" id="elem2" onclick="msgfunc2()"><div id="message2"><h1 class="str">食</h1></div></div>
-        <div data-trigger class="circle" id="elem6" onclick="msgfunc6()"><div id="message6"><h1 class="str">住</h1></div></div>
-      </div>
-      <div id="box1-2">
-        <div data-trigger class="circle" id="elem7" onclick="msgfunc7()"><div id="message7"><h1 class="str">暮</h1></div></div>
-        <div data-trigger class="circle" id="elem3" onclick="msgfunc3()"><div id="message3"><h1 class="str">安全</h1></div></div>
-      </div>
-      <div id="box1-3">
-        <div data-trigger class="circle" id="elem4" onclick="msgfunc4()"><div id="message4"><h1 class="str">便利</h1></div></div>
-        <div data-trigger class="circle" id="elem5" onclick="msgfunc5()"><div id="message5"><h1 class="str">遊ぶ</h1></div></div>
-      </div>
-    </div> -->
     <div id="box4-1">
     <div data-trigger class="card card1" style="width: 18rem;">
       <img class="w-100 h-100" src="../img/apparel/GU.jpg" alt="アパレル">
@@ -106,7 +91,7 @@ include("./header.php");
       </div>
     </div>
     <div data-trigger class="card card3" style="width: 18rem;">
-      <img class="w-100 h-100" src="../img/谷津バラ園_入口.jpg" alt="ゲームセンター">
+      <img class="w-100 h-100" src="../img/play/谷津バラ園_入口.jpg" alt="ゲームセンター">
       <div class="card-body">
         <h5 class="card-title">遊ぶ</h5>
         <p class="card-text">津田沼には広々とした公園や、アミューズメント施設が沢山あります。週末に家族やペットと散歩、遊びに出掛けるコースとしては最適です。</p>
@@ -128,7 +113,6 @@ include("./header.php");
           <li><a href="./convenient.php">交通アクセス</a></li>
           <li><a href="./play.php">津田沼で遊ぶ</a></li>
           <li><a>-----------------</a></li>
-          <li><a href="../html/coupon.html">地域限定クーポン</a></li>
           <li><a href="./user.php">会員登録情報</a></li>
           <li><a href="../html/logout.html">ログアウト</a></li>
           <li><a>-----------------</a></li>
