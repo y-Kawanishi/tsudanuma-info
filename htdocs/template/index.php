@@ -114,7 +114,7 @@ include("./header.php");
           <li><a href="./play.php">津田沼で遊ぶ</a></li>
           <li><a>-----------------</a></li>
           <li><a href="./user.php">会員登録情報</a></li>
-          <li><a href="../html/logout.html">ログアウト</a></li>
+          <li><a href="./logout.php">ログアウト</a></li>
           <li><a>-----------------</a></li>
           <li><a href="../admin/entry.php">管理者ページ</a></li>
         </ul>

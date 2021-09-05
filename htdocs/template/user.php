@@ -31,6 +31,6 @@ include("./header.php");
 <p>性別：<h4><?=$gender?></h4></p>
 </div>
 <div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-outline-primary" type="button"><a href="../html/logout.html">ログアウト</a></button>
+    <button class="btn btn-outline-primary" type="button"><a href="./logout.php">ログアウト</a></button>
 </div>
 <?php include("./footer.php"); ?>
